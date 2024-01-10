@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setInterval(function () {
+                var copyrightElement = document.querySelector('.copyright');
+                copyrightElement.classList.toggle('show');
+            }, 3000);
+        });
+    </script>
+
+</head>
+<body>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-camera-retro nav-icon"></i>
+                    <span class="nav-text">Gallery</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-pencil nav-icon"></i>
+                    <span class="nav-text">Blog</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-envelope nav-icon"></i>
+                    <span class="nav-text">Message</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-bell nav-icon"></i>
+                    <span class="nav-text">Notification</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="copyright">&#169; CodeTikki @Shradha Patel</div>
+
+        <ul class="logout">
+            <li>
+                <a href="#">
+                    <i class="fa fa-cogs nav-icon"></i>
+                    <span class="nav-text">Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-sign-out nav-icon"></i>
+                    <span class="nav-text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blob-c">
+        <div class="shape-blob"></div>
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+        <div class="shape-blob three"></div>
+        <div class="shape-blob four"></div>
+        <div class="shape-blob five"></div>
+        <div class="shape-blob six"></div>
+      </div>
+    
+      <section>
+        <div class="card">
+          <img src="./images/01.png" alt="image" />
+    
+          <div class="card-content">
+            <p>A starry night</p>
+            <p>Look up at the night sky, and find yourself immersed in the amazing mountain range of Aspen.</p>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="./images/02.png" alt="image" />
+    
+          <div class="card-content">
+            <p>Misty mornings</p>
+            <p>Capture the stunning essence of the early morning sunrise in the Californian wilderness.</p>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="./images/03.png" alt="image" />
+    
+          <div class="card-content">
+            <p>Utah sunsets</p>
+            <p>Sunsets over the stunning Utah Canyonlands, is truly something much more than incredible.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+</body>
+
+</html>
